@@ -1,0 +1,8 @@
+CACHE MANIFEST
+# manifest.appcache v1
+# allows website to work offine.
+
+index.html
+code.js
+style.css
+favicon.png

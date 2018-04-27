@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html manifest=app.manifest>
+    <head>
+        <meta charset="utf-8">
+        <title>Takenote</title>
+        <link rel=icon type=image/png href=favicon.png>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <script src="code.js"></script>
+    </head>
+    <body onload="load()" onclick="focusText()" onkeyup="save()">
+        <div id=textarea class=container contenteditable=true>
+        </div>
+    </body>
+</html>
