@@ -1,4 +1,4 @@
-# takenote
+# paragraph
 A minimalist notebook.
 ---
 

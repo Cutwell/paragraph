@@ -4,7 +4,7 @@ function load() {
     if (typeof(Storage) !== "undefined") {
         var local = localStorage.notes;
         if(local == undefined || local == "<div><br></div>" || local == "<br>" || local == "") {
-            var new_text = "<input class='header' id='takenote' value='takenote' onkeyup='updateID(event)'><br><br> • Press ctrl+shift+H to insert a header.<br><br><span style='margin-left:2em'> • Headers can be used to navigate to specific sections of your notebook.</span><br><br><span style='margin-left:2em'> • Navigate by adding #NAME to the page URL, substituting NAME for the text inside the header.</span><br><br> • Press ctrl+shift+U to toggle uppercase for headers.<br><br> • Press alt+8 to insert a bullet point<br><br> • Press ctrl+shift+r to reset your notebook (requires confirmation).<br><br>";
+            var new_text = "<input class='header' id='paragraph' value='paragraph' onkeyup='updateID(event)'><br><br> • Press ctrl+shift+H to insert a header.<br><br><span style='margin-left:2em'> • Headers can be used to navigate to specific sections of your notebook.</span><br><br><span style='margin-left:2em'> • Navigate by adding #NAME to the page URL, substituting NAME for the text inside the header.</span><br><br> • Press ctrl+shift+U to toggle uppercase for headers.<br><br> • Press alt+8 to insert a bullet point<br><br> • Press ctrl+shift+r to reset your notebook (requires confirmation).<br><br>";
             local = new_text;
         }
         var textarea = document.getElementById("textarea");
