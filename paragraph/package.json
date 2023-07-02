@@ -12,9 +12,12 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-	"deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
+    "@babel/runtime": "^7.22.5",
+    "@loadable/component": "^5.15.3",
+    "codemirror": "^6.0.1",
     "easymde": "^2.18.0",
     "gatsby": "^5.11.0",
     "gatsby-plugin-manifest": "^5.11.0",

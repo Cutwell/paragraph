@@ -4,7 +4,7 @@
 module.exports = {
 	siteMetadata: {
 		title: `¶ Paragraph`,
-		siteUrl: `https://www.yourdomain.tld`,
+		siteUrl: `https://cutwell.github.io/`,
 	},
 	pathPrefix: "/paragraph",
 	plugins: [
@@ -13,10 +13,11 @@ module.exports = {
 			options: {
 				name: `Paragraph`,
 				short_name: `Paragraph`,
-				start_url: `/paragraph`,
-				display: `standalone`,
 				icon: "src/images/favicon.png",
 			},
 		},
 	],
+	flags: {
+		DEV_SSR: true,
+	},
 }
